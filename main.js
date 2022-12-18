@@ -2331,26 +2331,27 @@ if (IS_HEADER) {
 }
 
 //banner count down
-var tetAmLich = new Date(2023, 1, 22, 0, 0, 0).getTime();
-
+let tetAmLich = new Date("jan 22, 2023 00:00:00").getTime();
+// console.log(new Date(2022,11,19,0,0,0).getTime());
+console.log(tetAmLich)
 function newYear() {
   /*Lấy thời gian ngày hiện tại (mily giây) */
-  var ngayHienTai = new Date().getTime();
+  let ngayHienTai = new Date().getTime();
 
   /*Tính thời gian còn lại (mily giây) */
-  var thoigianConLai = tetAmLich - ngayHienTai;
+  let thoigianConLai = tetAmLich - ngayHienTai;
 
   /*Chuyển đơn vị thời gian tương ứng sang mili giây*/
-  var giay = 1000;
-  var phut = giay * 60;
-  var gio = phut * 60;
-  var ngay = gio * 24;
+  let giay = 1000;
+  let phut = giay * 60;
+  let gio = phut * 60;
+  let ngay = gio * 24;
 
   /*Tìm ra thời gian theo ngày, giờ, phút giây còn lại thông qua cách chia lấy dư(%) và làm tròn số(Math.floor) trong Javascript*/
-  var d = Math.floor(thoigianConLai / ngay);
-  var h = Math.floor((thoigianConLai % ngay) / gio);
-  var m = Math.floor((thoigianConLai % gio) / phut);
-  var s = Math.floor((thoigianConLai % phut) / giay);
+  let d = Math.floor(thoigianConLai / ngay);
+  let h = Math.floor((thoigianConLai % ngay) / gio);
+  let m = Math.floor((thoigianConLai % gio) / phut);
+  let s = Math.floor((thoigianConLai % phut) / giay);
 
   /*Hiển thị kết quả ra các thẻ Div với ID tương ứng*/
   document.getElementById("day").innerText = d;
