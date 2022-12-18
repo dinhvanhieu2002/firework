@@ -326,7 +326,7 @@ body {
 .countdown {
   display: flex;
   position: absolute;
-  top: 40%;
+  top: 30%;
   justify-content: center;
   width: 100%;
   font-family: 'Quicksand', sans-serif;
