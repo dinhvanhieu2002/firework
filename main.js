@@ -2331,7 +2331,7 @@ if (IS_HEADER) {
 }
 
 //banner count down
-let tetAmLich = new Date("jan 22, 2023 00:00:00").getTime();
+let tetAmLich = new Date("feb 10, 2024 00:00:00").getTime();
 // console.log(new Date(2022,11,19,0,0,0).getTime());
 console.log(tetAmLich)
 function newYear() {
@@ -2364,3 +2364,6 @@ function newYear() {
 setInterval(function () {
   newYear();
 }, 1000);
+
+
+//music background
